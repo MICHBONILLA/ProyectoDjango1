@@ -15,7 +15,7 @@ def agregar(request):
             return redirect('home')
     else:
         form = TareaForm()
-
+    
     return render(request,'todo/agregar.html',{'form':form})
 
 
